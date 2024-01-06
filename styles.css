@@ -233,7 +233,7 @@ p {
     display: inline-block;
     border-right: 5px solid;
     width: 100%;
-    white-space: wrap;
+    white-space: nowrap;
     overflow: hidden;
     animation: 
         typing 2s steps(24),
