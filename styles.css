@@ -470,6 +470,7 @@ p {
     background-color: #26a8b788;
     padding: 2rem 0;
     text-align: center;
+    border-radius: 100px;
   }
   
   .contact_container {
