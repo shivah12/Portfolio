@@ -88,6 +88,7 @@ section {
 .primary-btn {
     background-image: var(--gradient);
     color: var(--text-white);
+    border-radius: 10px; /* Corrected border-radius property */
 }
 
 .primary-btn:hover {
@@ -95,8 +96,9 @@ section {
     background: var(--bg-white);
     color: var(--secondary-text);
     box-shadow: none;
+    border-radius: 10px; /* Adjusted border-radius for hover effect */
+    border: 1px solid black;
 }
-
 .secondary-btn {
     background-image: var(--bg-white);
     color: var(--secondary-text);
@@ -469,18 +471,17 @@ p {
 .contact {
     background-color: #26a8b788;
     padding: 2rem 0;
-    text-align: center;
-    border-radius: 50px;
-  }
-  
-  .contact_container {
+    text-align: center; /* Center the content */
+    border-radius: 100px;
+}
+
+.contact_container {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
+    flex-direction: column; /* Change to column to center items vertically */
+    align-items: center; /* Center items horizontally */
+}
   
   .contact-heading {
     font-size: 2rem;
@@ -518,6 +519,7 @@ p {
     justify-content: space-between;
   }
   
+  
   .col {
     flex: 1;
     margin-right: 10px;
@@ -554,14 +556,16 @@ p {
     background-color: rgba(68, 148, 149, 0.66);
     color: #fff;
     padding: 0.5rem 1rem;
-    border: none;
+    border: 1px solid var(--bg-white);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
   }
   
   button:hover {
     background-color: rgba(214, 225, 236, 0.693);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
   }
   
   .contact-form,
