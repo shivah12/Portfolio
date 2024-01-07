@@ -24,7 +24,10 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" >
+    <script>
+        AOS.init();
+      </script>
     <!-- Navbar section -->
     <header class="header_wrapper">
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -95,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="titlebox">
+                    <div class="titlebox" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="500">
                     <h3>let me<br>Introduce <br>myself!</h3>
                    </div>
                     <h7>I am Shreeti Mohapatra, a Front-end developer and UI/UX designer, I tend to create functional and responsive designs to implement and enhance the outreach of my clientale. I am currently exploring Backend services while I furnish my skills in frontend designing using the required skills.</h7>
@@ -135,7 +138,7 @@
                       <div class="skill">
                         <div class="skill-name">Figma</div>
                         <div class="skill-bar">
-                          <div class="skill-level" style="width: 90%;">90%</div>
+                          <div class="skill-level" style="width: 80%;">80%</div>
                       </div>
                    
                   </div>
@@ -162,7 +165,7 @@
                     <div class="card-body">
                        <h5 class="card-title"><a href="https://shivah12.github.io/pulseai.github.io/home.html" target="_blank">🤖 PulseAI</a></h5>
                     <p class="card-text">Welcome to Pulse AI a project created using HTML,CSS and Bootstrap to showcase new and articles focused on Artificial Intelligence and related fields to provide a seamless experience to the world of AI enthusiasts. </p>
-                    <a href="https://shivah12.github.io/pulseai.github.io/home.html" class="btn btn-primary" target="_blank">Discover More</a>
+                    <a href="https://github.com/shivah12/pulseai.github.io" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +177,7 @@
                     <div class="card-body">
                        <h5 class="card-title"><a href="https://shivah12.github.io/Yatri.github.io/" target="_blank">✈️Yatri</a></h5>
                     <p class="card-text">Yatri is designed to showcase your wanderlust and entice visitors to explore the world. Crafted with HTML, CSS, and Bootstrap, this responsive and visually appealing landing page is perfect for travel enthusiasts and adventure seekers.</p>
-                    <a href="https://shivah12.github.io/Yatri.github.io/" class="btn btn-primary" target="_blank">Discover More</a>
+                    <a href="https://github.com/shivah12/Yatri.github.io" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -186,25 +189,25 @@
                     <div class="card-body">
                        <h5 class="card-title"><a href=" https://shivah12.github.io/FitnessFam.github.io/" target="_blank">🧘🏻‍♂️FitnessFam</a></h5>
                     <p class="card-text">Fitness Academy website designed with HTML, CSS, JavaScript, and Bootstrap. Engaging animations and responsive layout invite you to explore personalized training programs, nutritional guidance and facilities. </p>
-                    <a href=" https://shivah12.github.io/FitnessFam.github.io/" class="btn btn-primary" target="_blank">Discover More</a>
+                    <a href="https://github.com/shivah12/FitnessFam.github.io" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-md-4">
+            <div class="col-md-4" id="coffeeTrailCard" style="display: none;">
                 <div class="card mb-4">
                     <img src="images/services-img/coffeetrail.png" class="card-img-top" alt="Coffeetrail">
                     <div class="card-body">
-                       <h5 class="card-title"><a href="https://shivah12.github.io/Coffeetrail.github.io/" target="_blank">☕CoffeeTrail</a></h5>
-                    <p class="card-text">Welcome to the Coffee Cafe Website project! This web application is designed to capture the cozy and inviting atmosphere of a coffee cafe, providing users with a delightful online experience. Built with HTML, CSS, and Bootstrap, this website is perfect for coffee lovers and cafe enthusiasts.</p>
-                    <a href="https://shivah12.github.io/Coffeetrail.github.io/" class="btn btn-primary" target="_blank">Discover More</a>
+                        <h5 class="card-title"><a href="https://shivah12.github.io/Coffeetrail.github.io/" target="_blank">☕CoffeeTrail</a></h5>
+                        <p class="card-text">Welcome to the Coffee Cafe Website project! This web application is designed to capture the cozy and inviting atmosphere of a coffee cafe, providing users with a delightful online experience. Built with HTML, CSS, and Bootstrap, this website is perfect for coffee lovers and cafe enthusiasts.</p>
+                        <a href="https://shivah12.github.io/Coffeetrail.github.io/" class="btn btn-primary" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
+          
+                <div class="text-center mt-4">
+                    <button class="main-btn primary-btn show-more-btn" onclick="showHide()">Show More</button>
+                </div>
 
-            
-    
     </section>
     <!-- portfolio Section exit -->
 
@@ -214,11 +217,6 @@
     <section id="contact" class="footer_wrapper mt-3 mt-md-0">
         <section class="contact">
             <div class="contact_container">
-                <div class="contact-details">
-                    <h2 class="contact-heading">Contact Details</h2>
-                    <p><i class="ri-mail-line contact-icon"></i> <strong>Email:</strong>shreeti.mohapatra@gmail.com</p>
-                    <p><i class="ri-map-pin-line contact-icon"></i> <strong>Address:</strong>Bhubaneswar,Odisha,India</p>
-                </div>
                 <div class="contact-form">
                     <h2 class="contact-heading">Contact Me</h2>
                     <form action="your-backend-script.php" method="post">
@@ -251,7 +249,7 @@
                             <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit">Send Message</button>
+                            <button class="main-btn primary-btn" type="submit">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -260,9 +258,11 @@
         <div class="container mt-5">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 text-center">
+                    
                     <div class="footer-logo mb-3 mb-md-0">
                         <img decoding="async" src="https://th.bing.com/th/id/OIP.UTmwMntXMujnKbkqcp738wHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain">
                     </div>
+
                     <div class="my-4 social-icons">
                         <h5>Follow Me</h5>
                         <ul class="list-unstyled d-flex justify-content-center align-items-center">
@@ -276,7 +276,9 @@
                 </div>
                 <div class="col-lg-8 col-sm-12">
                     <p class="footer-text text-center my-2">Copyright © 2024 All rights reserved | Developed by: Shreeti Mohapatra</a>
+                        <p class="footer-text text-center my-2">Bhubaneswar, Odisha</p>
                     </p>
+                    </div>
 
                 </div>
             </div>
@@ -316,7 +318,24 @@
         document.addEventListener('DOMContentLoaded', () => {
             typeEffect();
         });
-    </script>
+        var x = 0;
+
+function showHide() {
+    const coffeeTrailCard = document.getElementById('coffeeTrailCard');
+
+    if (x == 0) {
+        coffeeTrailCard.style.display = 'block';
+        x = 1;
+    } else {
+        coffeeTrailCard.style.display = 'none';
+        x = 0;
+    }
+}
+
+
+
+       </script>
+       
   
 </body>
 
