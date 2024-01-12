@@ -112,13 +112,13 @@
                   <h2 class="section-title">Skills</h2>
                   <div class="skill-column">
                     <div class="skill">
-                      <div class="skill-name">HTML/CSS</div>
+                      <div class="skill-name">HTML</div>
                       <div class="skill-bar">
                         <div class="skill-level" style="width: 90%;">90%</div>
                       </div>
                     </div>
                     <div class="skill">
-                      <div class="skill-name">Javascript</div>
+                      <div class="skill-name">CSS</div>
                       <div class="skill-bar">
                         <div class="skill-level" style="width: 85%;">85%</div>
                       </div>
@@ -199,7 +199,17 @@
                     <div class="card-body">
                         <h5 class="card-title"><a href="https://shivah12.github.io/Coffeetrail.github.io/" target="_blank">☕CoffeeTrail</a></h5>
                         <p class="card-text">Welcome to the Coffee Cafe Website project! This web application is designed to capture the cozy and inviting atmosphere of a coffee cafe, providing users with a delightful online experience. Built with HTML, CSS, and Bootstrap, this website is perfect for coffee lovers and cafe enthusiasts.</p>
-                        <a href="https://shivah12.github.io/Coffeetrail.github.io/" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
+                        <a href="https://github.com/shivah12/Coffeetrail.github.io" class="btn btn-primary" target="_blank">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="snakegame" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/services-img/snakegame.png" class="card-img-top" alt="snakegame">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://snake-game-github-io.vercel.app/" target="_blank">🐍Snake Game</a></h5>
+                        <p class="card-text">Created a React + Vite Snake Game with dynamic features, music, and deployed on Vercel. Strong problem-solving, React, and deployment skills demonstrated. Achieved seamless gameplay experience with responsive design and background music integration. </p>
+                        <a href="https://github.com/shivah12/Snake_Game.github.io" class="btn btn-primary" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -320,17 +330,22 @@
         });
         var x = 0;
 
-function showHide() {
+        function showHide() {
     const coffeeTrailCard = document.getElementById('coffeeTrailCard');
+    const snakegameCard = document.getElementById('snakegame');
 
     if (x == 0) {
         coffeeTrailCard.style.display = 'block';
         x = 1;
+        snakegameCard.style.display = 'block';
+        x = 1;
     } else {
         coffeeTrailCard.style.display = 'none';
+        snakegameCard.style.display = 'none';
         x = 0;
     }
 }
+
 
 
 
