@@ -132,7 +132,7 @@
                       </div><div class="skill">
                         <div class="skill-name">ReactJS</div>
                         <div class="skill-bar">
-                          <div class="skill-level" style="width: 70%;">70%</div>
+                          <div class="skill-level" style="width: 80%;">80%</div>
                         </div>
                       </div>
                       <div class="skill">
@@ -210,6 +210,16 @@
                         <h5 class="card-title"><a href="https://snake-game-github-io.vercel.app/" target="_blank">🐍Snake Game</a></h5>
                         <p class="card-text">Created a React + Vite Snake Game with dynamic features, music, and deployed on Vercel. Strong problem-solving, React, and deployment skills demonstrated. Achieved seamless gameplay experience with responsive design and background music integration. </p>
                         <a href="https://github.com/shivah12/Snake_Game.github.io" class="btn btn-primary" target="_blank">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="spacey" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/services-img/spacey.png" class="card-img-top" alt="spacey">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://spacey-three.vercel.app/" target="_blank">☄️Spacey</a></h5>
+                        <p class="card-text">Spacey is a React + Vite website with a Swiper component, showcasing a space-themed image slider featuring planets. It incorporates an audio element, set to autoplay on user interaction, providing an immersive experience. </p>
+                        <a href="https://github.com/shivah12/Spacey" class="btn btn-primary" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -333,15 +343,19 @@
         function showHide() {
     const coffeeTrailCard = document.getElementById('coffeeTrailCard');
     const snakegameCard = document.getElementById('snakegame');
+    const spacey = document.getElementById('spacey');
 
     if (x == 0) {
         coffeeTrailCard.style.display = 'block';
         x = 1;
         snakegameCard.style.display = 'block';
         x = 1;
+        spacey.style.display = 'block';
+        x = 1;
     } else {
         coffeeTrailCard.style.display = 'none';
         snakegameCard.style.display = 'none';
+        spacey.style.display = 'none';
         x = 0;
     }
 }
