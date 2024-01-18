@@ -173,11 +173,11 @@
             <!-- Additional Cards -->
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="images/services-img/yatri.png" class="card-img-top" alt="Yatri Image">
+                    <img src="images/services-img/shinzo.png" class="card-img-top" alt="Shinzo Image">
                     <div class="card-body">
-                       <h5 class="card-title"><a href="https://shivah12.github.io/Yatri.github.io/" target="_blank">✈️Yatri</a></h5>
-                    <p class="card-text">Yatri is designed to showcase your wanderlust and entice visitors to explore the world. Crafted with HTML, CSS, and Bootstrap, this responsive and visually appealing landing page is perfect for travel enthusiasts and adventure seekers.</p>
-                    <a href="https://github.com/shivah12/Yatri.github.io" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
+                       <h5 class="card-title"><a href="https://shinzo-three.vercel.app/" target="_blank">🐧Shinzo</a></h5>
+                    <p class="card-text">Created a React study space  with dynamic features, music, and deployed on Vercel. Achieved responsive design using Framer Motion Library and Mterial UI for icons. Utilised Redux for state management of tasks and timer.</p>
+                    <a href="https://github.com/shivah12/Shinzo" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -218,8 +218,18 @@
                     <img src="images/services-img/spacey.png" class="card-img-top" alt="spacey">
                     <div class="card-body">
                         <h5 class="card-title"><a href="https://spacey-three.vercel.app/" target="_blank">☄️Spacey</a></h5>
-                        <p class="card-text">Spacey is a React + Vite website with a Swiper component, showcasing a space-themed image slider featuring planets. It incorporates an audio element, set to autoplay on user interaction, providing an immersive experience. It is deployed using Vercel. </p>
+                        <p class="card-text">Spacey is a React + Vite website with a Swiper component, showcasing a space-themed image slider featuring planets. It incorporates an audio element, set to autoplay on user interaction, providing an immersive experience. </p>
                         <a href="https://github.com/shivah12/Spacey" class="btn btn-primary" target="_blank">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="yatri" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/services-img/yatri.png" class="card-img-top" alt="yatri">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://shivah12.github.io/Yatri.github.io/" target="_blank">✈Yatri</a></h5>
+                        <p class="card-text">Yatri is designed to showcase your wanderlust and entice visitors to explore the world. Crafted with HTML, CSS, and Bootstrap, this responsive and visually appealing landing page is perfect for travel enthusiasts and adventure seekers. </p>
+                        <a href="https://github.com/shivah12/Yatri.github.io" class="btn btn-primary" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -344,6 +354,8 @@
     const coffeeTrailCard = document.getElementById('coffeeTrailCard');
     const snakegameCard = document.getElementById('snakegame');
     const spacey = document.getElementById('spacey');
+    const yatri = document.getElementById('yatri');
+
 
     if (x == 0) {
         coffeeTrailCard.style.display = 'block';
@@ -352,9 +364,12 @@
         x = 1;
         spacey.style.display = 'block';
         x = 1;
+        yatri.style.display = 'block';
+        x = 1;
     } else {
         coffeeTrailCard.style.display = 'none';
         snakegameCard.style.display = 'none';
+        yatri.style.display = 'none';
         spacey.style.display = 'none';
         x = 0;
     }
