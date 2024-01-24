@@ -130,7 +130,7 @@
                           <div class="skill-level" style="width: 80%;">80%</div>
                         </div>
                       </div><div class="skill">
-                        <div class="skill-name">ReactJS</div>
+                        <div class="skill-name">ReactJS(Redux)</div>
                         <div class="skill-bar">
                           <div class="skill-level" style="width: 80%;">80%</div>
                         </div>
@@ -140,6 +140,7 @@
                         <div class="skill-bar">
                           <div class="skill-level" style="width: 80%;">80%</div>
                       </div>
+                      
                    
                   </div>
                 </div>
@@ -176,7 +177,7 @@
                     <img src="images/services-img/shinzo.png" class="card-img-top" alt="Shinzo Image">
                     <div class="card-body">
                        <h5 class="card-title"><a href="https://shinzo-three.vercel.app/" target="_blank">🐧Shinzo</a></h5>
-                    <p class="card-text">Created a React study space  with dynamic features, music, and deployed on Vercel. Achieved responsive design using Framer Motion Library and Material UI for icons. Utilised Redux for state management of tasks and timer.</p>
+                    <p class="card-text">Created a React study space  with dynamic features, music, and deployed on Vercel. Achieved responsive design using Framer Motion Library and Mterial UI for icons. Utilised Redux for state management of tasks and timer.</p>
                     <a href="https://github.com/shivah12/Shinzo" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
@@ -187,9 +188,19 @@
                 <div class="card mb-4">
                     <img src="images/services-img/plantspace.png" class="card-img-top" alt="PlantSpace">
                     <div class="card-body">
-                       <h5 class="card-title"><a href="https://plant-space.vercel.app/" target="_blank">🌿PlantSpace</a></h5>
+                       <h5 class="card-title"><a href=" https://github.com/shivah12/PlantSpace" target="_blank">🌿PlantSpace</a></h5>
                     <p class="card-text">Created a React based website for people to explore different plants and buy if they lke for their Home or Office purposes, was deployed using Vercel. Responsive design for a seamless user experience across devices. </p>
-                    <a href="https://github.com/shivah12/PlantSpace" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
+                    <a href="plant-space.vercel.app" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="daanflow" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/services-img/daanflow.png" class="card-img-top" alt="FitnessFam">
+                    <div class="card-body">
+                       <h5 class="card-title"><a href="https://shivah12.github.io/DaanFlow/main.html" target="_blank">✅DaanFlow</a></h5>
+                    <p class="card-text">Donation promoting website designed with HTML, CSS, JavaScript, and Bootstrap. Created for a noble purpose with a responsive design and interface. Features including a survey form, login and donation pages. </p>
+                    <a href="https://github.com/shivah12/DaanFlow" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -203,12 +214,13 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-md-4" id="coffeeTrailCard" style="display: none;">
                 <div class="card mb-4">
                     <img src="images/services-img/coffeetrail.png" class="card-img-top" alt="Coffeetrail">
                     <div class="card-body">
                         <h5 class="card-title"><a href="https://shivah12.github.io/Coffeetrail.github.io/" target="_blank">☕CoffeeTrail</a></h5>
-                        <p class="card-text">Welcome to the Coffee Cafe Website project! This web application is designed to capture the cozy and inviting atmosphere of a coffee cafe, providing users with a delightful online experience. Built with HTML, CSS, and Bootstrap, this website is perfect for coffee lovers and cafe enthusiasts.</p>
+                        <p class="card-text">This web application is designed to capture the cozy and inviting atmosphere of a coffee cafe, providing users with a delightful online experience. Built with HTML, CSS, and Bootstrap, this website is perfect for coffee lovers and cafe enthusiasts.</p>
                         <a href="https://github.com/shivah12/Coffeetrail.github.io" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
@@ -218,7 +230,7 @@
                     <img src="images/services-img/snakegame.png" class="card-img-top" alt="snakegame">
                     <div class="card-body">
                         <h5 class="card-title"><a href="https://snake-game-github-io.vercel.app/" target="_blank">🐍Snake Game</a></h5>
-                        <p class="card-text">Created a React + Vite Snake Game with dynamic features, music, and deployed on Vercel. Strong problem-solving, React, and deployment skills demonstrated. Achieved seamless gameplay experience with responsive design and background music integration. </p>
+                        <p class="card-text">Created a React+Vite Snake Game with dynamic features, music, and deployed on Vercel. Strong problem-solving, React, and deployment skills demonstrated. Achieved seamless gameplay experience with responsive design and background music integration. </p>
                         <a href="https://github.com/shivah12/Snake_Game.github.io" class="main-btn primary-btn mt-4" target="_blank">Discover More</a>
                     </div>
                 </div>
@@ -362,6 +374,7 @@
         var x = 0;
 
         function showHide() {
+    const daanflow = document.getElementById('daanflow');
     const fitnessfam = document.getElementById('fitnessfam');
     const coffeeTrailCard = document.getElementById('coffeeTrailCard');
     const snakegameCard = document.getElementById('snakegame');
@@ -371,6 +384,8 @@
 
 
     if (x == 0) {
+        daanflow.style.display = 'block';
+        x = 1;
         fitnessfam.style.display = 'block';
         x = 1;
         coffeeTrailCard.style.display = 'block';
@@ -383,6 +398,7 @@
         x = 1;
         
     } else {
+        daanflow.style.display = 'none';
         fitnessfam.style.display = 'none';
         coffeeTrailCard.style.display = 'none';
         snakegameCard.style.display = 'none';
