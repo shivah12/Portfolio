@@ -543,7 +543,7 @@ p {
   input[type="text"],
   textarea {
     background-color: #fff;
-    color: #000000;
+    color: black;
     padding: 0.5rem;
     border-radius: 5px;
     border-top: #f6f6f6;
